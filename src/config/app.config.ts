@@ -1,6 +1,6 @@
 import { HelloWorldConfig } from '../feature-modules/hello-world/hello-world.config';
 import { Configurable } from 'ts-configurable';
-import { GoodbyeWorldConfig } from '../feature-modules/goodbye-world/goodbye-world.config';
+import { HelloMarsConfig } from '../feature-modules/hello-mars/hello-mars.config';
 
 @Configurable()
 export class AppConfig {
@@ -8,7 +8,7 @@ export class AppConfig {
     greeting: 'Hello World!',
   };
 
-  readonly goodbyeWorld: GoodbyeWorldConfig = {
-    lastWords: 'Goodbye World!',
+  readonly HelloMars: HelloMarsConfig = {
+    marsianGreeting: 'Hello Mars!',
   };
 }
