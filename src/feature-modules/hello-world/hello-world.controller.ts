@@ -6,7 +6,7 @@ export class HelloWorldController {
   constructor(private readonly config: HelloWorldConfig) {}
 
   @Get()
-  getHello(): string {
+  sayHello(): string {
     return this.config.greeting;
   }
 }

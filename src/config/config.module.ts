@@ -1,6 +1,7 @@
 import { Module, DynamicModule, Global } from '@nestjs/common';
 import { AppConfig } from './app.config';
 import { HelloWorldConfig } from '../feature-modules/hello-world/hello-world.config';
+import { GoodbyeWorldConfig } from '../feature-modules/goodbye-world/goodbye-world.config';
 
 @Global()
 @Module({})
@@ -10,6 +11,7 @@ export class ConfigModule {
 
     const providers = [
       { provide: HelloWorldConfig, useValue: config.helloWorld },
+      { provide: GoodbyeWorldConfig, useValue: config.goodbyeWorld },
     ];
 
     return {
