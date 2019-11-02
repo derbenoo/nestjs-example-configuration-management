@@ -8,7 +8,7 @@ export class AppConfig {
     greeting: 'Hello World!',
   };
 
-  readonly HelloMars: HelloMarsConfig = {
+  readonly helloMars: HelloMarsConfig = {
     marsianGreeting: 'Hello Mars!',
   };
 }

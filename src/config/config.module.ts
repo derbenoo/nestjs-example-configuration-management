@@ -11,7 +11,7 @@ export class ConfigModule {
 
     const providers = [
       { provide: HelloWorldConfig, useValue: config.helloWorld },
-      { provide: HelloMarsConfig, useValue: config.HelloMars },
+      { provide: HelloMarsConfig, useValue: config.helloMars },
     ];
 
     return {

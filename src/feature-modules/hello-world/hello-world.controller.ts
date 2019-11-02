@@ -5,7 +5,7 @@ import { HelloWorldConfig } from './hello-world.config';
 export class HelloWorldController {
   constructor(private readonly config: HelloWorldConfig) {}
 
-  @Get()
+  @Get('hello-world')
   sayHello(): string {
     return this.config.greeting;
   }

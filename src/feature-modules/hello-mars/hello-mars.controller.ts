@@ -5,7 +5,7 @@ import { HelloMarsConfig } from './hello-mars.config';
 export class HelloMarsController {
   constructor(private readonly config: HelloMarsConfig) {}
 
-  @Get('mars')
+  @Get('hello-mars')
   sayHelloMars(): string {
     return this.config.marsianGreeting;
   }
